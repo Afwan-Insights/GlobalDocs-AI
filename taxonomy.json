@@ -1,0 +1,5 @@
+{
+  "Trade_Goods": ["Agriculture", "Industrial", "Textiles"],
+  "Trade_Services": ["Finance", "Telecommunications", "Transport"],
+  "Legal": ["Treaty", "Dispute", "Regulation"]
+}
