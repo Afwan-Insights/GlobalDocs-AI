@@ -1,27 +1,34 @@
-# GlobalDocs AI: International Information Management System
+# Semantic-XML: Enterprise Unstructured Data Pipeline
 
 **Architect:** Mohammed Afwan M A  
-**Role:** Senior Information Architect (Portfolio Project)
+**Core Competencies:** Data Engineering | NLP | Information Architecture | Metadata Governance
 
-## 📌 Project Overview
-GlobalDocs AI is a production-grade ecosystem designed to solve the "Dark Data" problem in international organizations. It transforms unstructured regulatory PDFs into structured, machine-readable XML archives and provides an AI-powered semantic search interface.
+## 🚀 Executive Summary
+This project demonstrates an end-to-end ETL (Extract, Transform, Load) pipeline designed to bridge the gap between unstructured PDF/Text archives and machine-readable knowledge systems. By integrating NLP-driven extraction with a long-term preservation strategy (XML), this framework enables high-precision semantic discovery in high-stakes regulatory or corporate environments.
 
-## 🛠️ The Technical Pipeline
-1. **Data Mining (NLP):** Uses `spaCy` to extract Geopolitical Entities (Countries) and metadata from raw PDFs.
-2. **Long-Term Preservation (XML):** Converts extracted data into **Akoma Ntoso-style XML** to ensure platform-agnostic readability for 50+ years.
-3. **Quality Governance:** A automated QC Auditor script that flags low-confidence metadata for human review.
-4. **Semantic Discovery:** Uses **Sentence-Transformers** and **FAISS** to enable searching by *meaning* rather than just keywords.
+## 🛠️ Technical Architecture & Skills
+### 1. Data Mining & Entity Extraction (NLP)
+* **Skills:** Named Entity Recognition (NER), Pattern Matching, Text Cleaning.
+* **Implementation:** Developed a Python-based miner using `spaCy` to autonomously identify and extract Geopolitical Entities (GPE) and temporal metadata from raw document streams.
 
-## 🚀 Key Skills Demonstrated
-* **Information Architecture:** Designing schemas for long-term data survival.
-* **Natural Language Processing:** Entity extraction and vector embeddings.
-* **Business Analysis:** Creation of BRDs, UAT plans, and stakeholder training modules.
-* **Python Engineering:** Building a modular ETL (Extract, Transform, Load) pipeline.
+### 2. Information Architecture (Schema Design)
+* **Skills:** XSD/XML Design, Data Normalization, Long-Term Preservation (LTP).
+* **Implementation:** Architected a hierarchical XML schema to ensure data remains software-agnostic and platform-independent, adhering to international standards for archival and auditability.
 
-## 📂 Project Structure
-- `/raw_documents`: Source PDFs (WTO Trade Reviews).
-- `/processed_xml`: Structured XML repository.
-- `miner.py`: The extraction engine.
-- `xml_converter.py`: The preservation script.
-- `semantic_engine.py`: The AI search brain.
-- `Project_Documentation.pdf`: The Business & Strategic alignment docs.
+### 3. Machine Learning & Semantic Discovery
+* **Skills:** Vector Embeddings, Similarity Search, Neural Search.
+* **Implementation:** Implemented a bi-encoder transformer model (`all-MiniLM-L6-v2`) to generate 384-dimensional dense vectors. Utilized **FAISS (Facebook AI Similarity Search)** to perform k-Nearest Neighbor (k-NN) retrieval, moving beyond keyword matching to context-aware discovery.
+
+### 4. Quality Assurance & Data Governance
+* **Skills:** Automated Auditing, UAT Design, Metadata Validation.
+* **Implementation:** Integrated a "QC Auditor" script to perform schema validation and identify low-confidence extractions, ensuring data integrity across the pipeline.
+
+## 📂 System Components
+- `miner.py`: Automated Feature Extraction engine.
+- `xml_converter.py`: Unstructured-to-Structured transformation layer.
+- `semantic_engine.py`: Vector-based retrieval system.
+- `qc_auditor.py`: Governance and validation logic.
+- `Architecture_Documentation.pdf`: Technical specifications and UAT plans.
+
+## 📈 Impact
+This framework reduces information retrieval time by enabling "concept-based" discovery and eliminates vendor-lock by utilizing open-standard XML for data storage.
