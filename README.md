@@ -1,6 +1,5 @@
 # Semantic-XML: Enterprise Unstructured Data Pipeline
 
-**Architect:** Mohammed Afwan M A  
 **Core Competencies:** Data Engineering | NLP | Information Architecture | Metadata Governance
 
 ## 🚀 Executive Summary
