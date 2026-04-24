@@ -31,3 +31,4 @@ This project demonstrates an end-to-end ETL (Extract, Transform, Load) pipeline 
 
 ## 📈 Impact
 This framework reduces information retrieval time by enabling "concept-based" discovery and eliminates vendor-lock by utilizing open-standard XML for data storage.
+<img width="1476" height="907" alt="thumbnail" src="https://github.com/user-attachments/assets/acff42ee-023d-4c2e-bb96-05e986e8ebf8" />
